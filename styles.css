@@ -264,44 +264,113 @@ body {
 /* Education Section */
 .education-section {
   background: #fff;
-  border-radius: 12px;
-  padding: 12px;
+  border-radius: 16px;
+  padding: 18px 16px;
   margin-bottom: 18px;
-  width: 100%;
-}
-
-.education-box {
   width: 100%;
 }
 
 .education-card {
   background: #E7F0EC;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 12px;
+  border-radius: 14px;
+  padding: 14px 14px 10px 14px;
+  margin-bottom: 14px;
+  box-shadow: none;
 }
 
 .education-card.highlight {
   background: #4A8B70;
-  color: #EBF9F2;
+  color: #fff;
 }
 
-.education-header {
+.education-card.highlight .education-title,
+.education-card.highlight .education-subtitle,
+.education-card.highlight .education-date,
+.education-card.highlight .education-list li {
+  color: #fff;
+}
+
+.education-row {
   display: flex;
   justify-content: space-between;
-  font-size: 8px;
-  font-weight: 500;
+  align-items: center;
   margin-bottom: 6px;
 }
 
-.education-institution {
-  font-size: 10px;
+.education-date {
+  font-size: 12px;
   font-weight: 500;
+  color: #232723;
 }
 
-.education-details {
-  font-size: 8px;
-  line-height: 1.5;
+.education-card.highlight .education-date {
+  color: #fff;
+}
+
+.most-recent-badge {
+  background: #D76239;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 2px 12px;
+  margin-left: 8px;
+  margin-top: 0;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.education-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+}
+
+.education-main {
+  min-width: 140px;
+  max-width: 180px;
+  flex: 0 0 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.education-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 2px;
+  color: #232723;
+}
+
+.education-subtitle {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 0;
+  color: #232723;
+}
+
+.education-list {
+  font-size: 11.5px;
+  color: inherit;
+  margin: 0;
+  padding-left: 18px;
+  line-height: 1.45;
+  list-style: disc inside;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.education-list li {
+  margin-bottom: 2px;
+  padding-left: 0;
+  text-indent: 0;
+}
+
+.education-card:last-child {
+  margin-bottom: 0;
 }
 
 /* Tools Section */
