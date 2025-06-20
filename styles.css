@@ -39,9 +39,11 @@ body {
 .main-container {
   width: 100%;
   max-width: 402px;
-  margin: 32px auto;
+  margin: 4px auto;
   background: transparent;
   padding: 0;
+  margin-top: 8px;
+  margin-bottom: 0;
 }
 
 /* Section Containers */
@@ -67,7 +69,7 @@ body {
 .profile-section {
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+  align-items: stretch; /* Ensures both children match height */
   gap: 12px;
   background: transparent;
   box-shadow: none;
@@ -97,6 +99,7 @@ body {
   justify-content: center;
   min-width: 0;
   flex: 1 1 0;
+  height: 120px; /* Match the profile image height */
 }
 
 .profile-text .name {
@@ -544,7 +547,7 @@ body {
 
 /* Contact Section */
 .contact-section {
-  margin-bottom: 18px;
+  margin-bottom: 0;
   background: transparent;
   box-shadow: none;
   padding: 0;
@@ -557,6 +560,7 @@ body {
   color: #fff;
   text-align: left;
   width: 100%;
+  padding-bottom: 6px; /* was 14px or more */
 }
 
 .contact-title {
@@ -645,7 +649,7 @@ body {
     border-radius: 16px;
     padding: 16px 6px;
   }
-  .  Fix project heart visibility on mobile and make first project heart reds-grid {
+  .reds-grid {
     grid-template-columns: 1fr 1fr;
     gap: 12px;
   }
@@ -702,13 +706,25 @@ body {
     font-size: 19px;
     margin-bottom: 8px;
   }
+  .profile-section img {
+    height: 180px;
+    width: 180px;
+    min-width: 180px;
+    max-width: 180px;
+  }
+  .profile-text {
+    height: 180px;
+    border-radius: 29px;
+    padding: 36px 60px 36px 40px;
+    font-size: 22px;
+  }
 }
 
 /* --- DESKTOP LAYOUT: Only applies on screens 1200px and up --- */
 @media (min-width: 1200px) {
   .main-container {
     max-width: 1440px;
-    margin: 32px auto;
+    margin: 4px auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-areas:
@@ -750,9 +766,10 @@ body {
     background: #fff;
     border-radius: 29px;
     padding: 36px 60px 36px 40px;
-    min-width: 600px;
-    max-width: 1000px;
-    width: 100%;
+    width: 100%;         /* Ensure it stretches fully */
+    min-width: 0;        /* Remove fixed min-width */
+    max-width: none;     /* Remove fixed max-width */
+    box-sizing: border-box;
     box-shadow: 0 2px 12px 0 rgba(0,0,0,0.07);
     font-size: 22px;
     text-align: left;
