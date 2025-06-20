@@ -91,10 +91,6 @@ I used variables for color and font sizes to stay consistent with the Figma desi
 One challenge was aligning the profile section image perfectly — I fixed this using `align-items: center` in Flexbox and careful margin tweaks.
 Another was spacing the skills and education sections, where I used Grid and `gap` properties to handle that cleanly.
 
-#### 🧠 Bonus Features
-
-Some added touches include hover effects on buttons and links, and smooth transitions using `transition: all 0.3s ease;`.
-
 ### 🟢 5. Reflection (1 min)
 
 The most challenging part was getting the layout to match Figma exactly, especially across devices.
