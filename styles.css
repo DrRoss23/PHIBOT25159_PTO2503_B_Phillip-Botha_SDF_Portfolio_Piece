@@ -248,6 +248,10 @@ body {
   color: #fff !important;
 }
 
+.project-card--highlight .project-heart {
+  color: #ff2d2d !important;
+}
+
 .project-top {
   display: flex;
   justify-content: space-between;
