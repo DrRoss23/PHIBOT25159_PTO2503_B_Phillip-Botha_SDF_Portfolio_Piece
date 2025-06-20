@@ -645,7 +645,7 @@ body {
     border-radius: 16px;
     padding: 16px 6px;
   }
-  .projects-grid {
+  .  Fix project heart visibility on mobile and make first project heart reds-grid {
     grid-template-columns: 1fr 1fr;
     gap: 12px;
   }
@@ -1051,5 +1051,22 @@ body {
     color: #fff;
     font-weight: 600;
     font-size: 1.2em;
+  }
+}
+
+/* Hide hearts on all but the first project card in mobile */
+@media (max-width: 899px) {
+  .projects-grid .project-card .project-top .accent-color {
+    display: none;
+  }
+  .projects-grid .project-card--highlight .project-top .project-heart {
+    display: inline;
+  }
+}
+
+/* Show all hearts on desktop */
+@media (min-width: 900px) {
+  .projects-grid .project-card .project-top .accent-color {
+    display: inline;
   }
 }
