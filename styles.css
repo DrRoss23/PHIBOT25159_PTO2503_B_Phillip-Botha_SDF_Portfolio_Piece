@@ -181,7 +181,18 @@ body {
 .skills-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 14px 18px;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.skills-tags .skills-break {
+  flex-basis: 100%;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: block;
 }
 
 .skill-tag {
@@ -793,29 +804,40 @@ body {
     padding: 36px 32px 36px 36px;
     font-size: 1.1rem;
     min-width: 0;
+    width: 100%;      /* Ensure it fills the grid cell */
+    box-sizing: border-box;
     height: 100%;
-  }
-  .skills-box {
-    grid-area: skills;
-    border-radius: 29px;
-    padding: 36px 32px 36px 36px;
-    min-width: 0;
-    height: 100%;
-  }
-  .skills-tags {
     display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    margin-top: 24px;
+    flex-direction: column;
+    justify-content: flex-start;
   }
-  .skill-tag {
-    font-size: 1.1rem;
-    padding: 10px 22px;
-    border-radius: 96px;
+  .proficiency-levels {
+    width: 100%;
+  }
+  .proficiency-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+  .proficiency-label {
+    min-width: 90px;
+    flex-shrink: 0;
+  }
+  .proficiency-bar {
+    flex: 1;
+    width: 100%;
+    height: 10px;
     background: #E7F0EC;
-    color: #232723;
-    font-weight: 500;
-    text-transform: capitalize;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .proficiency-bar span {
+    display: block;
+    height: 100%;
+    background: #4A8B70;
+    border-radius: 5px;
   }
 
   /* Projects Section */
@@ -1072,6 +1094,30 @@ body {
     color: #fff;
     font-weight: 600;
     font-size: 1.2em;
+  }
+
+  .proficiency-box {
+    font-size: 1.5rem;
+    padding: 56px 56px 56px 56px;
+  }
+  .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 22px;
+  }
+  .proficiency-row {
+    gap: 28px;
+    margin-bottom: 28px;
+  }
+  .proficiency-label {
+    font-size: 1.35rem;
+    min-width: 160px;
+  }
+  .proficiency-bar {
+    height: 28px;
+    border-radius: 14px;
+  }
+  .proficiency-bar span {
+    border-radius: 14px;
   }
 }
 
