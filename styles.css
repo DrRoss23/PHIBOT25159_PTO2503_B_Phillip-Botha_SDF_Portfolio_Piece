@@ -1076,8 +1076,8 @@ body {
   /* Contact Section */
   .contact-section {
     grid-area: contact;
-    border-radius: 29px;
-    padding: 32px 48px;
+    border-radius: 18px;
+    padding: 28px 36px;
     background: #D76239;
     color: #fff;
     text-align: left;
@@ -1087,19 +1087,20 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 18px;
+    gap: 12px;
   }
   .contact-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 12px;
+    font-size: 1.35rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #fff;
   }
   .contact-details {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     color: #fff;
     display: flex;
     flex-wrap: wrap;
-    gap: 18px;
+    gap: 12px;
     align-items: center;
   }
   .contact-details a {
@@ -1108,10 +1109,10 @@ body {
     font-weight: 500;
   }
   .contact-details .divider {
-    margin: 0 16px;
+    margin: 0 12px;
     color: #fff;
     font-weight: 600;
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 
   .proficiency-box {
@@ -1174,5 +1175,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+  }
+}
+
+@media (max-width: 1199px) {
+  .desktop-only {
+    display: none !important;
   }
 }
