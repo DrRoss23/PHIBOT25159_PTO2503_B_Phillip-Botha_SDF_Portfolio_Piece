@@ -179,20 +179,18 @@ body {
 .skills-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px 14px; /* row gap, column gap */
-  margin-top: 8px;
+  gap: 10px;
 }
 
 .skill-tag {
   background: #E7F0EC;
-  border-radius: 18px;
+  border-radius: 40px;
   padding: 7px 16px;
   font-size: 13px;
   color: #232723;
   font-weight: 500;
+  margin-bottom: 4px;
   display: inline-block;
-  margin-bottom: 0;
-  box-shadow: none;
 }
 
 /* Projects Section */
