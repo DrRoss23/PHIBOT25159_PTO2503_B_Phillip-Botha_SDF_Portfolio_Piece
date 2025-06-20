@@ -822,7 +822,7 @@ body {
     padding: 36px 32px 36px 36px;
     font-size: 1.1rem;
     min-width: 0;
-    width: 80%;      /* Ensure it fills 80% of the grid cell */
+    width: 100%;      /* Ensure it fills 100% of the grid cell */
     box-sizing: border-box;
     height: 100%;
     display: flex;
@@ -1172,6 +1172,7 @@ body {
   .skills-box {
     height: 100%;
     min-height: 340px;
+    margin: 0; 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
