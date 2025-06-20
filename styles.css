@@ -723,7 +723,7 @@ body {
 /* --- DESKTOP LAYOUT: Only applies on screens 1200px and up --- */
 @media (min-width: 1200px) {
   .main-container {
-    max-width: 1440px;
+    max-width: 1000px; /* or 1200px, adjust as needed */
     margin: 4px auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -736,9 +736,17 @@ body {
       "contact contact";
     gap: 32px;
     align-items: start;
-    padding: 0 0 32px 0;
+    padding: 0 0 32px 0; /* No right padding */
   }
-
+  .education-section {
+    padding: 36px 24px 36px 36px; /* Reduce right padding */
+    margin-bottom: 0;
+  }
+  .tools-section {
+    padding: 32px 24px 32px 0; /* Remove left padding, keep right tight */
+    margin-bottom: 0;
+    max-width: 320px; /* Ensure it doesn't stretch too wide */
+  }
   /* Profile Section */
   .profile-section {
     grid-area: profile;
