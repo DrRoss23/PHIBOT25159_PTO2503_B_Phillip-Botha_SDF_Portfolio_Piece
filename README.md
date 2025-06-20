@@ -43,3 +43,7 @@ Hi, I’m Phillip-Rossouw Botha. This is my resume website, built from scratch u
 ### 🟢 5. Reflection
 
 The hardest part was matching the Figma layout exactly, especially across different devices. Breaking the site into sections and using a mobile-first approach made it manageable. I’m proud of the clean, responsive result using just HTML and CSS. In the future, I’d like to add JavaScript for interactivity and improve accessibility even further.
+
+
+Link to Loom VId - https://www.loom.com/share/c6301086ad8c4cbe8b749d1ad762f752?sid=78c52f25-c51e-4c5f-9322-732d963f2bfa
+
