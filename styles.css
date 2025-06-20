@@ -822,7 +822,7 @@ body {
     padding: 36px 32px 36px 36px;
     font-size: 1.1rem;
     min-width: 0;
-    width: 100%;      /* Ensure it fills the grid cell */
+    width: 80%;      /* Ensure it fills 80% of the grid cell */
     box-sizing: border-box;
     height: 100%;
     display: flex;
